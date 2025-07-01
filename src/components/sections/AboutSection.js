@@ -25,7 +25,7 @@ export default function AboutSection() {
   return (
     <section
       ref={ref}
-      className="w-full bg-white py-24 px-8 rounded-3xl shadow-lg border-t border-b border-ash_gray/30 relative z-10"
+      className="w-full bg-white py-16 md:py-24 px-6 md:px-8 rounded-3xl shadow-lg border-t border-b border-ash_gray/30 relative z-10"
     >
       <div className="max-w-7xl mx-auto relative">
         {/* Grid container */}
@@ -36,9 +36,9 @@ export default function AboutSection() {
               variants={fadeUp}
               initial="hidden"
               animate={controls}
-              className="mb-8"
+              className="mb-6 md:mb-8"
             >
-              <h2 className="text-5xl font-serif text-black_olive tracking-wide leading-tight">
+              <h2 className="text-3xl md:text-5xl font-serif text-black_olive tracking-wide leading-tight">
                 Meet Dr. Serena Blake
               </h2>
             </motion.div>
@@ -48,16 +48,16 @@ export default function AboutSection() {
               initial="hidden"
               animate={controls}
               transition={{ delay: 0.15 }}
-              className="space-y-6"
+              className="space-y-4 md:space-y-6"
             >
-              <p className="text-xl text-moss_green leading-relaxed tracking-wide">
+              <p className="text-base md:text-xl text-moss_green leading-relaxed tracking-wide">
                 Dr. Serena Blake is a licensed clinical psychologist (PsyD) based in Los Angeles, CA,
                 with eight years of experience and over 500 client sessions. She blends
                 evidence-based approaches—like cognitive-behavioral therapy and mindfulness—with
                 compassionate, personalized care to help you overcome anxiety, strengthen
                 relationships, and heal from trauma.
               </p>
-              <p className="text-xl text-moss_green leading-relaxed tracking-wide">
+              <p className="text-base md:text-xl text-moss_green leading-relaxed tracking-wide">
                 Whether you meet in her Maplewood Drive office or connect virtually via Zoom, Dr. Blake
                 is committed to creating a safe, supportive space for you to thrive.
               </p>
